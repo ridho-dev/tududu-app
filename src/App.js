@@ -2,12 +2,14 @@ import './style/style.css';
 import './style/responsive.css';
 
 import Navbar from './components/Navbar';
-
+import Contents from './components/Contents';
 
 function App() {
   return (
-    <Navbar />
-
+    <div>
+      <Navbar />
+      <Contents />
+    </div>
   );
 }
 
