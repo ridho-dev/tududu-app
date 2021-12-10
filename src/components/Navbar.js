@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div class="logo">
-        <button type="button" class="hamburger-btn" id="hamburgerBtn">
-          <div class="hamburger-img" id="hamburgerIcon"></div>
+      <div className="logo">
+        <button type="button" className="hamburger-btn" id="hamburgerBtn">
+          <div className="hamburger-img" id="hamburgerIcon"></div>
         </button>
-        <a href="/" class="logo-text">Tududu App</a>
+        <a href="/" className="logo-text">Tududu App</a>
       </div>
-      <button type="button" class="settings-btn" id="settingsBtn">
-        <div class="setting-img" id="settingsIcon"></div>
+      <button type="button" className="settings-btn" id="settingsBtn">
+        <div className="setting-img" id="settingsIcon"></div>
       </button>
     </nav>
   )

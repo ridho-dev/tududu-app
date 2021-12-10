@@ -1,34 +1,34 @@
 import React from 'react'
 
-const Todos = () => {
+const Todos = (props) => {
   return (
     <main>
-      <div class="main-container">
-        <div class="activity-title">
-          Today
+      <div className="main-container">
+        <div className="activity-title">
+          {props.defaultCategory}
         </div>
-        <div class="activity-date">
+        {/* <div className="activity-date">
           1 December 2021
         </div>
-        <div class="todos">
-          <div class="todo" id="todo1">
-            <div class="check-icon" id="check1"></div>
-            <div class="todo-title" id="title1">Designing Navbar</div>
+        <div className="todos">
+          <div className="todo" id="todo1">
+            <div className="check-icon" id="check1"></div>
+            <div className="todo-title" id="title1">Designing Navbar</div>
           </div>
-          <div class="todo">
-            <div class="check-icon"></div>
-            <div class="todo-title">Meeting with Elon Musk</div>
+          <div className="todo">
+            <div className="check-icon"></div>
+            <div className="todo-title">Meeting with Elon Musk</div>
           </div>
-          <div class="todo">
-            <div class="check-icon"></div>
-            <div class="todo-title">Go to grocery store</div>
+          <div className="todo">
+            <div className="check-icon"></div>
+            <div className="todo-title">Go to grocery store</div>
           </div>
-          <div class="todo">
-            <div class="check-icon"></div>
-            <div class="todo-title">Gym</div>
+          <div className="todo">
+            <div className="check-icon"></div>
+            <div className="todo-title">Gym</div>
           </div>
-        </div>
-        <button class="add-todo-btn" id="addTodoBtn">
+        </div> */}
+        <button className="add-todo-btn" id="addTodoBtn">
           +
         </button>
       </div>
