@@ -4,7 +4,7 @@
   }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
   ::-webkit-scrollbar {
     width: 4px;
   }

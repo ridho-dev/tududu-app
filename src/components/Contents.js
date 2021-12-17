@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 import Aside from './Aside'
 import Todos from './Todos'
 
-import categories from '../assets/data/categories';
-
 const Contents = () => {
   const [defaultCategory, setDefaultCategory] = useState("Today")
   const [customCategories, setCustomCategories] = useState([

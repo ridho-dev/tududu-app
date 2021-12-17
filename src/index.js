@@ -11,8 +11,14 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-const navElementHeight = document.querySelector(".navbar").offsetHeight;
+const navElement = document.querySelector(".navbar");
 const contentElement = document.querySelector(".content");
+const addTodoBtn = document.getElementById("addTodoBtn");
 
-contentElement.style.height = `${window.innerHeight - navElementHeight}px`
-contentElement.style.marginTop = `${navElementHeight}px`
+navElement.style.width = `${contentElement.offsetWidth}px`
+contentElement.style.height = `${window.innerHeight - navElement.offsetHeight}px`
+contentElement.style.marginTop = `${navElement.offsetHeight}px`
+
+if (window.innerWidth >= 1440) {
+  addTodoBtn.style.right = `${((window.innerWidth - contentElement.offsetWidth) / 2) + 20}px`
+}

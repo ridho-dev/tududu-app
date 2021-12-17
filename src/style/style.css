@@ -89,7 +89,6 @@ hr {
 
 .navbar {
   height: fit-content;
-  width: 100%;
   background-color: var(--primary1);
   display: flex;
   justify-content: space-between;
@@ -194,6 +193,7 @@ aside {
 
 .category-btn:hover {
   background-color: var(--button-hover);
+  transition: 0.2s;
 }
 
 .custom-category {
@@ -206,6 +206,18 @@ aside {
   background-color: transparent;
   font-size: 15px;
   font-weight: 700;
+}
+
+.show-aside {
+  display: block;
+}
+
+.no-show-aside {
+  display: none;
+}
+
+.category-active {
+  background-color: var(--button-hover);
 }
 
 
