@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '../assets/img/logo.png'
 
 const Navbar = () => {
   let isShowAside = true;
@@ -59,11 +60,16 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo">
+      <div className="logo-container">
         <button type="button" className="hamburger-btn" id="hamburgerBtn" onClick={openAside}>
           <div className="hamburger-img" id="hamburgerIcon"></div>
         </button>
-        <a href="/" className="logo-text">Tududu App</a>
+        <div className="logo">
+          <img src={logo} alt="" className='tududu-logo' />
+          <a href="/" className="logo-text">
+            Tududu App
+          </a>
+        </div>
       </div>
       <button type="button" className="settings-btn" id="settingsBtn">
         <div className="setting-img" id="settingsIcon"></div>
