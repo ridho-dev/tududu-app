@@ -1,6 +1,11 @@
 import React from 'react'
 
 const Todos = (props) => {
+  const openAddTodo = () => {
+    const todoModalContainer = document.getElementById("todoModalContainer");
+    todoModalContainer.style.animation = "fadeIn 0.2s";
+    setTimeout(() => { todoModalContainer.style.display = "flex"; }, 190)
+  }
   return (
     <main>
       <div className="main-container">
@@ -28,7 +33,7 @@ const Todos = (props) => {
             <div className="todo-title">Gym</div>
           </div>
         </div> */}
-        <button className="add-todo-btn" id="addTodoBtn">
+        <button className="add-todo-btn" id="addTodoBtn" onClick={openAddTodo}>
           +
         </button>
       </div>

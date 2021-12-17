@@ -20,6 +20,12 @@ const Aside = (props) => {
     )
   }
 
+  const openAddCategory = () => {
+    const categoryModalContainer = document.getElementById("categoryModalContainer");
+    categoryModalContainer.style.animation = "fadeIn 0.2s";
+    setTimeout(() => { categoryModalContainer.style.display = "flex"; }, 190)
+  }
+
   return (
     <aside>
       <div className="aside-container show-aside" id="asideContainer">
@@ -39,7 +45,7 @@ const Aside = (props) => {
             }
           </div>
         </div>
-        <button type="button" className="add-category-btn" id="addCategoryBtn">+ New category</button>
+        <button type="button" className="add-category-btn" id="addCategoryBtn" onClick={openAddCategory}>+ New category</button>
       </div>
     </aside>
   )

@@ -55,7 +55,14 @@ const Navbar = () => {
         isShowAside = true
       }
     }
+  }
 
+  const openSetting = () => {
+    const modalContainer = document.getElementById("modalContainer");
+    const settingsIcon = document.getElementById("settingsIcon");
+    settingsIcon.style.transform = 'rotate(180deg)';
+    modalContainer.style.animation = "fadeIn 0.2s";
+    setTimeout(() => { modalContainer.style.display = "flex"; }, 190)
   }
 
   return (
@@ -64,15 +71,10 @@ const Navbar = () => {
         <button type="button" className="hamburger-btn" id="hamburgerBtn" onClick={openAside}>
           <div className="hamburger-img" id="hamburgerIcon"></div>
         </button>
-        <div className="logo">
-          <img src={logo} alt="" className='tududu-logo' />
-          <a href="/" className="logo-text">
-            Tududu App
-          </a>
-        </div>
+        <a href="/" className="logo-text">Tududu App</a>
       </div>
       <button type="button" className="settings-btn" id="settingsBtn">
-        <div className="setting-img" id="settingsIcon"></div>
+        <div className="setting-img" id="settingsIcon" onClick={openSetting}></div>
       </button>
     </nav>
   )
