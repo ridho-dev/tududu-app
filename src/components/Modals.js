@@ -36,59 +36,59 @@ const Modals = () => {
   return (
     <div>
       <div className="overlay" id="overlay" onClick={unShowAside}></div>
-      <div class="modal-container" id="modalContainer">
-        <div class="settings-modal">
-          <div class="close-modal-container">
-            <button class="close-modal" id="closeModal" onClick={closeSettingModal}>X</button>
+      <div className="modal-container" id="modalContainer">
+        <div className="settings-modal">
+          <div className="close-modal-container">
+            <button className="close-modal" id="closeModal" onClick={closeSettingModal}>X</button>
           </div>
-          <div class="setting">
-            <div class="settings-category">Settings</div>
-            <div class="themes">
-              <div class="settings-title">Theme</div>
-              <button class="theme-btn bg-blue"></button>
-              <button class="theme-btn bg-red"></button>
-              <button class="theme-btn bg-green"></button>
-              <button class="theme-btn bg-orange"></button>
+          <div className="setting">
+            <div className="settings-category">Settings</div>
+            <div className="themes">
+              <div className="settings-title">Theme</div>
+              <button className="theme-btn bg-blue"></button>
+              <button className="theme-btn bg-red"></button>
+              <button className="theme-btn bg-green"></button>
+              <button className="theme-btn bg-orange"></button>
             </div>
           </div>
-          <div class="setting">
-            <div class="settings-category">About</div>
-            <div class="settings-title">About App</div>
-            <div class="settings-title-detail">Tududu App</div>
-            <div class="settings-title">Version</div>
-            <div class="settings-title-detail">1.0.0</div>
+          <div className="setting">
+            <div className="settings-category">About</div>
+            <div className="settings-title">About App</div>
+            <div className="settings-title-detail">Tududu App</div>
+            <div className="settings-title">Version</div>
+            <div className="settings-title-detail">1.0.0</div>
           </div>
         </div>
       </div>
 
-      <div class="modal-container" id="todoModalContainer">
-        <div class="add-todo-modal">
-          <div class="close-modal-container">
-            <button class="close-modal" id="closeAddTodoModal" onClick={closeAddTodoModal}>X</button>
+      <div className="modal-container" id="todoModalContainer">
+        <div className="add-todo-modal">
+          <div className="close-modal-container">
+            <button className="close-modal" id="closeAddTodoModal" onClick={closeAddTodoModal}>X</button>
           </div>
-          <div class="modal-content">
+          <div className="modal-content">
             <form>
               <label>Add new task:</label>
-              <input type="text" placeholder="Task name" class="task-input" />
-              <div class="close-modal-container">
-                <button type="button" class="submit-todo-btn" id="submitTodoBtn">Add</button>
+              <input type="text" placeholder="Task name" className="task-input" />
+              <div className="close-modal-container">
+                <button type="button" className="submit-todo-btn" id="submitTodoBtn">Add</button>
               </div>
             </form>
           </div>
         </div>
       </div>
 
-      <div class="modal-container" id="categoryModalContainer">
-        <div class="add-todo-modal">
-          <div class="close-modal-container">
-            <button class="close-modal" id="closeAddCategoryModal" onClick={closeAddCategoryModal}>X</button>
+      <div className="modal-container" id="categoryModalContainer">
+        <div className="add-todo-modal">
+          <div className="close-modal-container">
+            <button className="close-modal" id="closeAddCategoryModal" onClick={closeAddCategoryModal}>X</button>
           </div>
-          <div class="modal-content">
+          <div className="modal-content">
             <form>
               <label>Add new category:</label>
-              <input type="text" placeholder="Category name" class="task-input" />
-              <div class="close-modal-container">
-                <button type="button" class="submit-category-btn" id="submitCategoryBtn">Add</button>
+              <input type="text" placeholder="Category name" className="task-input" />
+              <div className="close-modal-container">
+                <button type="button" className="submit-category-btn" id="submitCategoryBtn">Add</button>
               </div>
             </form>
           </div>
